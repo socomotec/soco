@@ -20,6 +20,8 @@
 			$('.parallax').parallax();
 			$(".button-collapse").sideNav();
 			$('.scrollspy').scrollSpy();
+			 $('ul.tabs').tabs();
+
 			/*var options = [
 			    {selector: '#Nosotros', offset: 50, callback: function() { Materialize.toast("This is our ScrollFire Demo!", 1500 ); } }, 
 			    {selector: '.nosotros', offset: 400, callback: function() { Materialize.showStaggeredList(".nosotros"); } } //{selector: '#image-test', offset: 500, callback: function() { Materialize.fadeInImage("#image-test"); } }
@@ -61,7 +63,7 @@
     </div>
 	<!-- Termina Barra de navegacion-->
 	<!-- inicio slider-->
-	<div class="fluid-container" id="Inicio">
+	<div class="fluid-container section scrollspy" id="Inicio">
 		<div class="slider ">
 		    <ul class="slides">
 		      <li>
@@ -236,7 +238,7 @@
 	<footer class="page-footer grey darken-3">
        	<div class="footer-copyright">
             <div class="container">
-            	© 2016 SOCOMTEC .Ltda, Diseñada por SOCOMTEC
+            	© 2016 Soluciones Computacionales y Tecnologicas Ltda, Diseñada por SOCOMTEC
             	<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
         	</div>
    	  	</div>
