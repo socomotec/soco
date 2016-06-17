@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>	
   	<link type="text/css" rel="stylesheet" href="MATERIALIZE/css/materialize.min.css"  media="screen,projection"/>
   	<link type="text/css" rel="stylesheet" href="CSS/estilo_menu.css"/>
-    <script type="text/javascript" src="JS/jquery-2.2.4.min.js"></script>
+
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--<script type="text/javascript" src="JS/jquery-2.2.4.min.js"></script> -->
 	<script src="MATERIALIZE/js/materialize.min.js"></script>
 	
 	<!--Import iconos google-->
@@ -18,7 +20,14 @@
 			$('.slider').slider();
 			$('.parallax').parallax();
 			$(".button-collapse").sideNav();
-		});
+			$('.scrollspy').scrollSpy();
+			/*var options = [
+			    {selector: '#Nosotros', offset: 50, callback: function() { Materialize.toast("This is our ScrollFire Demo!", 1500 ); } }, 
+			    {selector: '.nosotros', offset: 400, callback: function() { Materialize.showStaggeredList(".nosotros"); } } //{selector: '#image-test', offset: 500, callback: function() { Materialize.fadeInImage("#image-test"); } }
+			]; Materialize.scrollFire(options);*/
+
+
+			});
 	</script>
 
 </head>
@@ -31,7 +40,7 @@
 		    <div class="nav-wrapper blue darken-2">
 		      	<a href="#!" class="brand-logo">Socomtec</a>
 			    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-			    <ul class="right hide-on-med-and-down">
+			    <ul class="right hide-on-med-and-down table-of-contents">
 			    	<li><a href="#Inicio">Inicio</a></li>
 			        <li><a href="#Caracteristicas">Caracteristicas</a></li>
 			        <li><a href="#Servicio">Servicios</a></li>
@@ -40,7 +49,7 @@
 			        <li><a href="#Contaco">Contacto</a></li>
 			     </ul>
 			     <!-- Barra de navegacion para movil-->
-			     <ul class="side-nav" id="mobile-demo">
+			     <ul class="side-nav table-of-contents" id="mobile-demo">
 			        <li><a href="#Inicio">Inicio</a></li>
 			        <li><a href="#Caracteristicas">Caracteristicas</a></li>
 			        <li><a href="#Servicio">Servicios</a></li>
@@ -91,8 +100,8 @@
 
 	<!-- inicio paralax -->
     
-    <div class="section white" id="Caracteristicas">
-	    <div class="row container">
+    <div class="section scrollspy" id="Caracteristicas">
+	    <div class="row container ">
 	    	<h2 class="header"></h2>
 	      	<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
 	    </div>
@@ -101,7 +110,7 @@
 	    <div class="parallax"><img src="IMG/paralax1.png"></div>
 	</div>
 
-	<div class="section white" id="Servicio">
+	<div class="section white scrollspy" id="Servicio">
 	    <div class="row container">
 	    	<h2 class="header">Servicios</h2>
 	      	<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
@@ -111,17 +120,17 @@
 		<div class="parallax"><img src="IMG/paralax2.jpg"></div>
   	</div>
 
-  	<div class="section white" id="Nosotros">
-	    <div class="row container">
-	    	<h2 class="header">Nosotros</h2>
-	      	<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+  	<div class="section white scrollspy" id="Nosotros">
+	    <div class="row container nosotros">
+	    	<h2 class="header nosotros-con">Nosotros</h2>
+	      	<p class="grey-text text-darken-3 lighten-3 nosotros-con">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
 	    </div>
 	</div>
 	<div class="parallax-container">
 		<div class="parallax"><img src="IMG/paralax2.jpg"></div>
   	</div>
 
-  	<div class="section white " id="Equipo">
+  	<div class="section white scrollspy" id="Equipo">
   		<div class="container ">
   			<h1 class="center ">Nuestro Equipo</h1>
   		</div>
@@ -176,7 +185,7 @@
 	<div class="parallax-container">
 		<div class="parallax"><img src="IMG/paralax3.jpg"></div>
   	</div>
-  	<div class="section white" id="Contaco">
+  	<div class="section white scrollspy" id="Contaco">
 	    <div class="row container">
 	    	<h2 class="header">Contacto</h2>
 	      	
