@@ -7,8 +7,7 @@
   	<link type="text/css" rel="stylesheet" href="MATERIALIZE/css/materialize.min.css"  media="screen,projection"/>
   	<link type="text/css" rel="stylesheet" href="CSS/estilo_menu.css"/>
 
-  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!--<script type="text/javascript" src="JS/jquery-2.2.4.min.js"></script> -->
+    <script type="text/javascript" src="JS/jquery-2.2.4.min.js"></script>
 	<script src="MATERIALIZE/js/materialize.min.js"></script>
 	
 	<!--Import iconos google-->
