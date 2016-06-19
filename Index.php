@@ -13,6 +13,7 @@
 	
 	<!--Import iconos google-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="FONT-AWESOME/css/font-awesome.min.css">
 	<!--Import iconos google-->
 
 	<script>
@@ -127,9 +128,31 @@
 	    <div class="row container">
 	    	<h2 class="center-align titulo">Nosotros</h2>
 	    	<hr />
-	    	<h3 class="titulo"> Misión </h3>
-	      	<p class="grey-text text-darken-3 lighten-3 flow-text">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-	    	<h3 class="titulo"> Visión </h3>
+	    	<div class="col s12 m12 l12">
+	    		<h3 class="titulo center-align"> ¿Quiénes Somos? </h3>
+	    		<p class="flow-text " align="justify">
+
+	    			SOCOMTEC es una empresa que nace con la necesidad de cubrir las falencias informaticas y/o tecnologicas
+	    			que poseen las empresas a nivel local, a traves de un servicio integro, cubriendo amplias expectativas.
+
+	    		</p>
+	    	</div>
+	    	<div class="col s12 m6 l6" >
+	    		
+	    		<h3 class="titulo center-align"> Misión <i class="fa fa-flag" aria-hidden="true"></i> </h3>
+	      	<p class="flow-text " align="justify">
+	      		Ser una de las empresas consultoras líderes del mercado local, estando siempre a la 
+	      		vanguardia de las nuevas tecnologías, entregando un servicio de calidad en cada una
+	      		de las propuestas innovadoras que ofrecemos al exigente mercado al cual abarcamos.
+	      	</p>
+	        </div>
+	      	<div class="col s12 m6 l6">
+	    		<h3 class="titulo center-align"> Visión <i class="fa fa-eye" aria-hidden="true"></i> </h3>
+	    		<p class="flow-text" align="justify"> 
+	    		Llegar a ser una de las empresas mas reconocidas en el país, abarcando a empresas de alto 
+	    		nivel, compitiendo con las mejores empresas consultoras a nivel nacional.
+	    	</p>
+	   		 </div>
 	    </div>
 	</div>
 	<div class="parallax-container">
