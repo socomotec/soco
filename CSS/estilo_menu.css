@@ -1,5 +1,13 @@
+#barra_navegacion{
 
+font-family: 'Bad Script', cursive;
+margin-right: 2%;
+font-size: 100%;
 
-#card_circle{
-	border-radius: 100px;
+}	
+
+#logo{
+
+	margin-left: 2%;
 }
+

@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>	
   	<link type="text/css" rel="stylesheet" href="MATERIALIZE/css/materialize.min.css"  media="screen,projection"/>
-  	<link type="text/css" rel="stylesheet" href="CSS/estilo_menu.css"/>
+  	
+	<link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="JS/jquery-2.2.4.min.js"></script>
 	<script src="MATERIALIZE/js/materialize.min.js"></script>
@@ -30,7 +31,7 @@
 
 			});
 	</script>
-
+<link type="text/css" rel="stylesheet" href="CSS/estilo_menu.css"/>
 </head>
 
 <body>
@@ -39,9 +40,9 @@
 	<div class="navbar-fixed ">	 
 	    <nav>
 		    <div class="nav-wrapper blue darken-2">
-		      	<a href="#!" class="brand-logo">Socomtec</a>
+		      	<a href="#!" id="logo" class="brand-logo">Socomtec</a>
 			    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-			    <ul class="right hide-on-med-and-down table-of-contents">
+			    <ul class="right hide-on-med-and-down table-of-contents" id="barra_navegacion">
 			    	<li><a href="#Inicio">Inicio</a></li>
 			        <li><a href="#Caracteristicas">Caracteristicas</a></li>
 			        <li><a href="#Servicio">Servicios</a></li>
