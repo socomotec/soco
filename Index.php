@@ -114,7 +114,8 @@
 
 	<div class="section white scrollspy" id="Servicio">
 	    <div class="row container">
-	    	<h2 class="header">Servicios</h2>
+	    	<h2 class="center-align titulo">Servicios</h2>
+	    	<hr />
 	      	<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
 	    </div>
 	</div>
@@ -123,9 +124,12 @@
   	</div>
 
   	<div class="section white scrollspy" id="Nosotros">
-	    <div class="row container nosotros">
-	    	<h2 class="header nosotros-con">Nosotros</h2>
-	      	<p class="grey-text text-darken-3 lighten-3 nosotros-con">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+	    <div class="row container">
+	    	<h2 class="center-align titulo">Nosotros</h2>
+	    	<hr />
+	    	<h3 class="titulo"> Misión </h3>
+	      	<p class="grey-text text-darken-3 lighten-3 flow-text">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+	    	<h3 class="titulo"> Visión </h3>
 	    </div>
 	</div>
 	<div class="parallax-container">
@@ -134,7 +138,9 @@
 
   	<div class="section white scrollspy" id="Equipo">
   		<div class="container ">
-  			<h1 class="center ">Nuestro Equipo</h1>
+
+  			<h1 class="center-align titulo">Nuestro Equipo</h1>
+  			<hr />
   		</div>
 	    <div class="row container">
 	    	<div class="col s12 m4">
@@ -189,7 +195,8 @@
   	</div>
   	<div class="section white scrollspy" id="Contaco">
 	    <div class="row container">
-	    	<h2 class="header">Contacto</h2>
+	    	<h2 class="titulo center-align">Contacto</h2>
+	    	<hr />
 	      	
 	      	<div class="row">
 		      	<div class="col s12 m6">
