@@ -1,3 +1,8 @@
+html{
+
+	zoom:100%;
+}
+
 #barra_navegacion{
 
 font-family: 'Bad Script', cursive;
@@ -24,3 +29,7 @@ hr{
    background-size:contain;  
    border: none;
 }
+
+
+
+

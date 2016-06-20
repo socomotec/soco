@@ -24,13 +24,38 @@
 			$('.scrollspy').scrollSpy();
 			 $('ul.tabs').tabs();
 
-			/*var options = [
-			    {selector: '#Nosotros', offset: 50, callback: function() { Materialize.toast("This is our ScrollFire Demo!", 1500 ); } }, 
-			    {selector: '.nosotros', offset: 400, callback: function() { Materialize.showStaggeredList(".nosotros"); } } //{selector: '#image-test', offset: 500, callback: function() { Materialize.fadeInImage("#image-test"); } }
-			]; Materialize.scrollFire(options);*/
+
+			 if($(window).width() >= 601){
+
+			 	if($(window).height() > 800){
+
+			 		var Porte_largo = $( window ).height();
+					$('.porte_seccion').height(Porte_largo - 40);
+
+			 	} 	
+
+			 }
+
+			 	$(".responsive_seccion").click(function(){
+
+			if($(window).width() >= 601){
+
+			 	if($(window).height() > 900){
+
+			 		var Porte_largo = $( window ).height();
+					$('.porte_seccion').height(Porte_largo - 40);
+
+			 	} 	
+
+			 }
 
 
+		});
+
+			
 			});
+
+		
 	</script>
 <link type="text/css" rel="stylesheet" href="CSS/estilo_menu.css"/>
 </head>
@@ -38,18 +63,18 @@
 <body>
 
 	<!-- Barra de navegacion-->
-	<div class="navbar-fixed ">	 
+	<div class="navbar-fixed " id="barra_navegacion_1">	 
 	    <nav>
 		    <div class="nav-wrapper blue darken-2">
 		      	<a href="#!" id="logo" class="brand-logo">Socomtec</a>
 			    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			    <ul class="right hide-on-med-and-down table-of-contents" id="barra_navegacion">
-			    	<li><a href="#Inicio">Inicio</a></li>
-			        <li><a href="#Caracteristicas">Caracteristicas</a></li>
-			        <li><a href="#Servicio">Servicios</a></li>
-			        <li><a href="#Nosotros">Nosotros</a></li>
-			        <li><a href="#Equipo">Equipo</a></li>
-			        <li><a href="#Contaco">Contacto</a></li>
+			    	<li><a href="#Inicio" class="responsive_seccion">Inicio</a></li>
+			        <li><a href="#Caracteristicas" class="responsive_seccion">Caracteristicas</a></li>
+			        <li><a href="#Servicio" class="responsive_seccion">Servicios</a></li>
+			        <li><a href="#Nosotros" class="responsive_seccion">Nosotros</a></li>
+			        <li><a href="#Equipo" class="responsive_seccion">Equipo</a></li>
+			        <li><a href="#Contacto" class="responsive_seccion">Contacto</a></li>
 			     </ul>
 			     <!-- Barra de navegacion para movil-->
 			     <ul class="side-nav table-of-contents" id="mobile-demo">
@@ -58,7 +83,7 @@
 			        <li><a href="#Servicio">Servicios</a></li>
 			        <li><a href="#Nosotros">Nosotros</a></li>
 			        <li><a href="#Equipo">Equipo</a></li>
-			        <li><a href="#Contaco">Contacto</a></li>
+			        <li><a href="#Contacto">Contacto</a></li>
 			     </ul>
 		    </div>
 	  	</nav>
@@ -66,9 +91,9 @@
 	<!-- Termina Barra de navegacion-->
 	<!-- inicio slider-->
 	<div class="fluid-container section scrollspy" id="Inicio">
-		<div class="slider ">
-		    <ul class="slides">
-		      <li>
+		<div class="slider" >
+		    <ul class="slides" >
+		      <li >
 		        <img src="IMG/1.png"> <!-- random image -->
 		        <div class="caption center-align">
 		          <h3>This is our big Tagline!</h3>
@@ -103,32 +128,36 @@
 
 	<!-- inicio paralax -->
     
-    <div class="section scrollspy" id="Caracteristicas">
-	    <div class="row container ">
-	    	<h2 class="header"></h2>
+    
+	    <div class="row container porte_seccion">
+	    	<br />
+	    	<br />
+	    	<h2 class="titulo center-align">Caracteristicas</h2>
+	    	<hr class="section scrollspy" id="Caracteristicas" />
 	      	<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
 	    </div>
-	</div>
-	<div class="parallax-container">
-	    <div class="parallax"><img src="IMG/paralax1.png"></div>
-	</div>
-
-	<div class="section white scrollspy" id="Servicio">
-	    <div class="row container">
+	
+	    <div class="row container porte_seccion">
+	    	<br />
+	    	<br />
 	    	<h2 class="center-align titulo">Servicios</h2>
-	    	<hr />
+	    	<hr class="section scrollspy" id="Servicio" />
 	      	<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
 	    </div>
-	</div>
+	
 	<div class="parallax-container">
-		<div class="parallax"><img src="IMG/paralax2.jpg"></div>
+		<div class="parallax"><img src="IMG/paralax1.png"></div>
   	</div>
 
-  	<div class="section white scrollspy" id="Nosotros">
-	    <div class="row container">
+  	
+	    <div class="row container porte_seccion" >
+	    	<br />
+	    	<BR />
+	    	<br />
+	    	
 	    	<h2 class="center-align titulo">Nosotros</h2>
-	    	<hr />
-	    	<div class="col s12 m12 l12">
+	    	<hr class="section scrollspy" id="Nosotros" />
+	    	<div class="col s12 m12 l12 " >
 	    		<h3 class="titulo center-align"> ¿Quiénes Somos? </h3>
 	    		<p class="flow-text " align="justify">
 
@@ -146,7 +175,7 @@
 	      		de las propuestas innovadoras que ofrecemos al exigente mercado al cual abarcamos.
 	      	</p>
 	        </div>
-	      	<div class="col s12 m6 l6">
+	      	<div class="col s12 m6 l6" >
 	    		<h3 class="titulo center-align"> Visión <i class="fa fa-eye" aria-hidden="true"></i> </h3>
 	    		<p class="flow-text" align="justify"> 
 	    		Llegar a ser una de las empresas mas reconocidas en el país, abarcando a empresas de alto 
@@ -154,18 +183,19 @@
 	    	</p>
 	   		 </div>
 	    </div>
-	</div>
+	
 	<div class="parallax-container">
 		<div class="parallax"><img src="IMG/paralax2.jpg"></div>
   	</div>
 
-  	<div class="section white scrollspy" id="Equipo">
-  		<div class="container ">
+  	<div >
+  		
+	    <div class="row container porte_seccion">
+			<br />
+			<br />
 
   			<h1 class="center-align titulo">Nuestro Equipo</h1>
-  			<hr />
-  		</div>
-	    <div class="row container">
+  			<hr class="section scrollspy " id="Equipo" />
 	    	<div class="col s12 m4">
 	    	  <div class="card">
 			    <div class="card-image waves-effect waves-block waves-light">
@@ -216,12 +246,18 @@
 	<div class="parallax-container">
 		<div class="parallax"><img src="IMG/paralax3.jpg"></div>
   	</div>
-  	<div class="section white scrollspy" id="Contaco">
-	    <div class="row container">
+
+
+  	
+	    <div class="row container porte_seccion">
+
+	    	<br />
+	    	<BR />
+	    	<br />
 	    	<h2 class="titulo center-align">Contacto</h2>
-	    	<hr />
+	    	<hr class="section scrollspy" id="Contacto" />
 	      	
-	      	<div class="row">
+	      	<div class="row ">
 		      	<div class="col s12 m6">
 		      		<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
 		      	</div>
@@ -260,7 +296,7 @@
 			  </div>
 
 	    </div>
-	</div>
+	
   	<!-- Termina paralax-->
 
 
