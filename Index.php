@@ -176,7 +176,7 @@
     </div>
 	<!-- Termina Barra de navegacion-->
 	<!-- inicio slider-->
-	<div class="fluid-container section scrollspy" id="Inicio">
+	<div class="fluid-container scrollspy" id="Inicio">
 		<div class="slider" >
 		    <ul class="slides" >
 		      <li >
