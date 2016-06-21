@@ -22,24 +22,10 @@
 			$('.parallax').parallax();
 			$(".button-collapse").sideNav();
 			$('.scrollspy').scrollSpy();
-			 $('ul.tabs').tabs();
-
-
-			 if($(window).width() >= 601){
-
-			 	if($(window).height() > 800){
-
-			 		var Porte_largo = $( window ).height();
-					$('.porte_seccion').height(Porte_largo - 40);
-
-			 	} 	
-
-			 }
-
-			 	$(".responsive_seccion").click(function(){
-
-			if($(window).width() >= 601){
-
+			$('ul.tabs').tabs();
+			
+			 if($(window).width() >= 500){
+	 	
 			 	if($(window).height() > 900){
 
 			 		var Porte_largo = $( window ).height();
@@ -49,15 +35,115 @@
 
 			 }
 
+			 $(".responsive_seccion").click(function(){
 
-		});
+
+				if($(window).width() >= 500){
+
+			 		if($(window).height() > 900){
+
+			 			var Porte_largo = $( window ).height();
+						$('.porte_seccion').height(Porte_largo - 40);
+
+			 		} 	
+
+			 	}
+
+			}); //cierre del click function .responsive_seccion
 
 			
-			});
+		}); //cierre del document ready
 
-		
+		function animacion(id){
+
+				if(id == 2){
+
+				$("#titulo_caracteristicas").addClass("animated rollIn");
+        			contador_s_1 =0;
+ 	    			cronometro_1 = setInterval(
+            		function(){
+                if(contador_s_1==1)
+                {
+                $("#titulo_caracteristicas").removeClass("animated rollIn");     		
+                clearInterval(cronometro_1);
+                }
+                contador_s_1++;
+            		}
+            	,1000);       	
+    		
+				} // aqui termina el primer if
+
+				if(id == 3){
+
+				$("#titulo_servicios").addClass("animated rollIn");
+        			contador_s_2 =0;
+ 	    			cronometro_2 = setInterval(
+            		function(){
+                if(contador_s_2==1)
+                {
+                $("#titulo_servicios").removeClass("animated rollIn");     		
+                clearInterval(cronometro_2);
+                }
+                contador_s_2++;
+            	}
+            	,1000);
+
+				} // aqui termina el segundo if
+
+				if(id == 4){
+
+				$("#titulo_nosotros").addClass("animated rollIn");
+        			contador_s_3 =0;
+ 	    			cronometro_3 = setInterval(
+            		function(){
+                if(contador_s_3==1)
+                {
+                $("#titulo_nosotros").removeClass("animated rollIn");     		
+                clearInterval(cronometro_3);
+                }
+                contador_s_3++;
+            	}
+            	,1000);
+
+				} // aqui termina el segundo if
+
+				if(id == 5){
+
+				$("#titulo_equipo").addClass("animated rollIn");
+        			contador_s_4 =0;
+ 	    			cronometro_4 = setInterval(
+            		function(){
+                if(contador_s_4==1)
+                {
+                $("#titulo_equipo").removeClass("animated rollIn");     		
+                clearInterval(cronometro_4);
+                }
+                contador_s_4++;
+            	}
+            	,1000);
+
+				} // aqui termina el segundo if
+
+				if(id == 6){
+
+				$("#titulo_contacto").addClass("animated rollIn");
+        			contador_s_5 =0;
+ 	    			cronometro_5 = setInterval(
+            		function(){
+                if(contador_s_5==1)
+                {
+                $("#titulo_contacto").removeClass("animated rollIn");     		
+                clearInterval(cronometro_5);
+                }
+                contador_s_5++;
+            	}
+            	,1000);
+
+				} // aqui termina el segundo if
+			}
 	</script>
 <link type="text/css" rel="stylesheet" href="CSS/estilo_menu.css"/>
+<link type="text/css" rel="stylesheet" href="CSS/animate.css"/>
 </head>
 
 <body>
@@ -69,12 +155,12 @@
 		      	<a href="#!" id="logo" class="brand-logo">Socomtec</a>
 			    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			    <ul class="right hide-on-med-and-down table-of-contents" id="barra_navegacion">
-			    	<li><a href="#Inicio" class="responsive_seccion">Inicio</a></li>
-			        <li><a href="#Caracteristicas" class="responsive_seccion">Caracteristicas</a></li>
-			        <li><a href="#Servicio" class="responsive_seccion">Servicios</a></li>
-			        <li><a href="#Nosotros" class="responsive_seccion">Nosotros</a></li>
-			        <li><a href="#Equipo" class="responsive_seccion">Equipo</a></li>
-			        <li><a href="#Contacto" class="responsive_seccion">Contacto</a></li>
+			    	<li><a href="#Inicio" class="responsive_seccion" onClick="animacion(this.id)" id="1">Inicio</a></li>
+			        <li><a href="#Caracteristicas" class="responsive_seccion" onClick="animacion(this.id)" id="2">Caracteristicas</a></li>
+			        <li><a href="#Servicio" class="responsive_seccion" onClick="animacion(this.id)" id="3">Servicios</a></li>
+			        <li><a href="#Nosotros" class="responsive_seccion" onClick="animacion(this.id)"id="4">Nosotros</a></li>
+			        <li><a href="#Equipo" class="responsive_seccion" onClick="animacion(this.id)" id="5">Equipo</a></li>
+			        <li><a href="#Contacto" class="responsive_seccion" onClick="animacion(this.id)" id="6">Contacto</a></li>
 			     </ul>
 			     <!-- Barra de navegacion para movil-->
 			     <ul class="side-nav table-of-contents" id="mobile-demo">
@@ -132,7 +218,7 @@
 	    <div class="row container porte_seccion">
 	    	<br />
 	    	<br />
-	    	<h2 class="titulo center-align">Caracteristicas</h2>
+	    	<h2 class="titulo center-align" id="titulo_caracteristicas">Caracteristicas</h2>
 	    	<hr class="section scrollspy" id="Caracteristicas" />
 	      	<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
 	    </div>
@@ -140,7 +226,7 @@
 	    <div class="row container porte_seccion">
 	    	<br />
 	    	<br />
-	    	<h2 class="center-align titulo">Servicios</h2>
+	    	<h2 class="center-align titulo" id="titulo_servicios">Servicios</h2>
 	    	<hr class="section scrollspy" id="Servicio" />
 	      	<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
 	    </div>
@@ -155,7 +241,7 @@
 	    	<BR />
 	    	<br />
 	    	
-	    	<h2 class="center-align titulo">Nosotros</h2>
+	    	<h2 class="center-align titulo" id="titulo_nosotros">Nosotros</h2>
 	    	<hr class="section scrollspy" id="Nosotros" />
 	    	<div class="col s12 m12 l12 " >
 	    		<h3 class="titulo center-align"> ¿Quiénes Somos? </h3>
@@ -166,7 +252,7 @@
 
 	    		</p>
 	    	</div>
-	    	<div class="col s12 m6 l6" >
+	    	<div class="col s12 m6 l6">
 	    		
 	    		<h3 class="titulo center-align"> Misión <i class="fa fa-flag" aria-hidden="true"></i> </h3>
 	      	<p class="flow-text " align="justify">
@@ -194,7 +280,7 @@
 			<br />
 			<br />
 
-  			<h1 class="center-align titulo">Nuestro Equipo</h1>
+  			<h2 class="center-align titulo" id="titulo_equipo">Nuestro Equipo</h2>
   			<hr class="section scrollspy " id="Equipo" />
 	    	<div class="col s12 m4">
 	    	  <div class="card">
@@ -254,7 +340,7 @@
 	    	<br />
 	    	<BR />
 	    	<br />
-	    	<h2 class="titulo center-align">Contacto</h2>
+	    	<h2 class="titulo center-align" id="titulo_contacto">Contacto</h2>
 	    	<hr class="section scrollspy" id="Contacto" />
 	      	
 	      	<div class="row ">
