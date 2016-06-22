@@ -9,7 +9,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="JS/jquery-2.2.4.min.js"></script>
-	<script src="MATERIALIZE/js/materialize.min.js"></script>
+	<script src="MATERIALIZE/js/materialize.js"></script>
 	
 	<!--Import iconos google-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -24,32 +24,7 @@
 			$('.scrollspy').scrollSpy();
 			$('ul.tabs').tabs();
 			
-			 if($(window).width() >= 500){
-	 	
-			 	if($(window).height() > 900){
-
-			 		var Porte_largo = $( window ).height();
-					$('.porte_seccion').height(Porte_largo - 40);
-
-			 	} 	
-
-			 }
-
-			 $(".responsive_seccion").click(function(){
-
-
-				if($(window).width() >= 500){
-
-			 		if($(window).height() > 900){
-
-			 			var Porte_largo = $( window ).height();
-						$('.porte_seccion').height(Porte_largo - 40);
-
-			 		} 	
-
-			 	}
-
-			}); //cierre del click function .responsive_seccion
+			  //cierre del click function .responsive_seccion
 
 			
 		}); //cierre del document ready
