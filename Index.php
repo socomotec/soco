@@ -23,6 +23,7 @@
 			$(".button-collapse").sideNav();
 			$('.scrollspy').scrollSpy();
 			$('ul.tabs').tabs();
+			$('.modal-trigger').leanModal();
 			
 			  //cierre del click function .responsive_seccion
 
@@ -194,7 +195,7 @@
 	    	<br />
 	    	<br />
 	    	<h2 class="titulo center-align" id="titulo_caracteristicas">Caracteristicas</h2>
-	    	<hr class="section scrollspy" id="Caracteristicas" />
+	    	<hr class="section scrollspy separador" id="Caracteristicas" />
 	      	<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
 	    </div>
 	
@@ -202,7 +203,7 @@
 	    	<br />
 	    	<br />
 	    	<h2 class="center-align titulo" id="titulo_servicios">Servicios</h2>
-	    	<hr class="section scrollspy" id="Servicio" />
+	    	<hr class="section scrollspy separador" id="Servicio" />
 	      	<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
 	    </div>
 	
@@ -217,7 +218,7 @@
 	    	<br />
 	    	
 	    	<h2 class="center-align titulo" id="titulo_nosotros">Nosotros</h2>
-	    	<hr class="section scrollspy" id="Nosotros" />
+	    	<hr class="section scrollspy separador" id="Nosotros" />
 	    	<div class="col s12 m12 l12 " >
 	    		<h3 class="titulo center-align"> ¿Quiénes Somos? </h3>
 	    		<p class="flow-text " align="justify">
@@ -256,7 +257,7 @@
 			<br />
 
   			<h2 class="center-align titulo" id="titulo_equipo">Nuestro Equipo</h2>
-  			<hr class="section scrollspy " id="Equipo" />
+  			<hr class="section scrollspy separador" id="Equipo" />
 	    	<div class="col s12 m4">
 	    	  <div class="card">
 			    <div class="card-image waves-effect waves-block waves-light">
@@ -316,7 +317,7 @@
 	    	<BR />
 	    	<br />
 	    	<h2 class="titulo center-align" id="titulo_contacto">Contacto</h2>
-	    	<hr class="section scrollspy" id="Contacto" />
+	    	<hr class="section scrollspy separador" id="Contacto" />
 	      	
 	      	<div class="row ">
 		      	<div class="col s12 m6">
@@ -360,14 +361,61 @@
 	
   	<!-- Termina paralax-->
 
+	<!-- Inicio de sesion Intranet -->
+	
 
+  <!-- Modal Structure -->
+  <div id="iniciar_sesion" class="modal">
+    <div class="modal-head purple lighten-5"> 
+    	<br />
+    	<div class="row center-align">
+		<div class="col s11 m11 l11">
+    		<h4 class="center-align">Iniciar Sesión</h4>
+    	</div>
+    	<div class="col s1 m1 l1 right-align">
+    		<a onClick="$('#iniciar_sesion').closeModal();" href="#!"><i class="fa fa-times" aria-hidden="true"></i>&#32; &#32;
+			</a>
+    	</div>
+    	</div>
+    	<hr />
+    </div>
+    <div class="modal-content">
+    	
+    	<div class="row">
+    	<form class="col s12 m12 l12">
+
+      <div class="row">
+
+        <div class="input-field col s12 m8 l8 offset-m2 offset-l2 ">
+          <i class="fa fa-user prefix" aria-hidden="true"></i>
+          <input id="usario" type="text" class="validate">  
+        </div>
+
+        <div class="input-field col s12 m8 l8 offset-m2 offset-l2">
+		  <i class="fa fa-key prefix" aria-hidden="true"></i>
+          <input id="contraseña" type="password" class="validate">    
+        </div>
+
+      </div>
+
+
+    </form>
+  </div>
+    </div>
+    <div class="modal-footer">
+    	<hr>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Entrar</a>
+    </div>
+  </div>
+
+	<!-- Termian el Inicio de Sesion -->
 
 	<!-- footer -->
 	<footer class="page-footer grey darken-3">
        	<div class="footer-copyright">
             <div class="container">
             	© 2016 Soluciones Computacionales y Tecnologicas Ltda, Diseñada por SOCOMTEC
-            	<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            	<a class="grey-text text-lighten-4 right modal-trigger" href="#iniciar_sesion">Intranet</a>
         	</div>
    	  	</div>
     </footer>
