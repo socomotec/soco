@@ -4,13 +4,13 @@
 
 <html lang="es">
 	<head>
-		<title></title>
+		<title>Socomtec</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script type="text/javascript" src="../../JS/jquery-2.2.4.min.js"></script>
 		<link rel="stylesheet" href="../../FONT-AWESOME/css/font-awesome.min.css" />
-		<link type="text/css" rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css" />	
-		<script src="../Bootstrap/js/bootstrap.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />	
+		<script src="../bootstrap/js/bootstrap.min.js"></script>
 		<script type="text/javascript">
 
 		$(document ).ready(function(){
