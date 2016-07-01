@@ -127,8 +127,8 @@
 	<!-- Barra de navegacion-->
 	<div class="navbar-fixed " id="barra_navegacion_1">	 
 	    <nav>
-		    <div class="nav-wrapper blue darken-2">
-		      	<a href="#!" id="logo" class="brand-logo">Socomtec</a>
+		    <div class="nav-wrapper grey darken-4">
+		      	<a href="#!" id="logo" class="brand-logo"><img src="logo.png" style="height: 47px; margin-top: 5px;"></a>
 			    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 			    <ul class="right hide-on-med-and-down table-of-contents" id="barra_navegacion">
 			    	<li><a href="#Inicio" class="responsive_seccion" onClick="animacion(this.id)" id="1">Inicio</a></li>

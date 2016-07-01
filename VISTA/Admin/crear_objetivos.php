@@ -10,13 +10,12 @@
 		<meta charset="UTF-8">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
+		<script type="text/javascript" src="../../JS/jquery-2.2.4.min.js"></script>
 		<link rel="stylesheet" href="../../FONT-AWESOME/css/font-awesome.min.css" />
 		<link type="text/css" rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />	
 		
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  		
 		<script src="../bootstrap/js/bootstrap.js"></script>
 		<script type="text/javascript">
 
@@ -56,7 +55,7 @@
 
     							if(validacion==1){
 
-    								alert($("#input_fecha_inicio_obge").val());
+    								alert("Ingreso a la Base de datos");
 
     							}else{
 
@@ -79,8 +78,8 @@
             	valuesEnd=fechaFinal.split("-");
  
             	// Verificamos que la fecha no sea posterior a la actual
-            	var dateStart=new Date(valuesStart[2],(valuesStart[1]-1),valuesStart[0]);
-            	var dateEnd=new Date(valuesEnd[2],(valuesEnd[1]-1),valuesEnd[0]);
+            	var dateStart=new Date(valuesStart[0],(valuesStart[1]-1),valuesStart[2]);
+            	var dateEnd=new Date(valuesEnd[0],(valuesEnd[1]-1),valuesEnd[2]);
 
             	if(dateStart>dateEnd){
 
