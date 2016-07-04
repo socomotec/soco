@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>	
   	<link type="text/css" rel="stylesheet" href="MATERIALIZE/css/materialize.min.css"  media="screen,projection"/>
   	
-	<link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="JS/jquery-2.2.4.min.js"></script>
 	<script src="MATERIALIZE/js/materialize.js"></script>
@@ -204,7 +204,9 @@
 	    	<br />
 	    	<h2 class="center-align titulo" id="titulo_servicios">Servicios</h2>
 	    	<hr class="section scrollspy separador" id="Servicio" />
-	      	<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+	      	<p class="grey-text text-darken-3 lighten-3">
+	      		
+	      	</p>
 	    </div>
 	
 	<div class="parallax-container">
